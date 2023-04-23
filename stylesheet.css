@@ -1,0 +1,160 @@
+*
+{
+    margin: auto;
+    border: 0px;
+    padding: 0%;
+ 
+}
+
+@font-face {
+    font-family: this-font;
+    src: url(font.ttf);
+}
+#main-container {
+    background-image: linear-gradient(rgb(9, 31, 99), black);
+    width: 100vh;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vw;
+    position: relative;
+}
+#circle {
+    position:absolute;
+    background-color: blue;
+    border-radius: 50%;
+    height: 36%;
+    width: 36%;
+    top: 30%;
+    left: 32%;
+    border-color: white;
+    border-style: dotted;
+    border-width: 0.25vh;
+    animation: cirlce 10s linear 0s infinite forwards;
+    background-image: radial-gradient(black,green,black,purple,black);
+}
+
+.frame {
+    position: absolute;
+    height: 19.20%;
+    width: 19.20%;
+    border-style: dotted;
+    border-color: white;
+    border-width: 0.25vh;
+    animation: square 3s infinite ease-in-out alternate-reverse;
+    
+    background-size: cover;
+}
+#frame4, #frame5, #frame2 {
+    transform: rotate(45deg);
+    
+
+}
+#frame1 {
+    top :14.5%;
+    left: 15.67%;
+    background-image: url(image3.jpg);
+
+}
+#frame3 {
+    top :14.5%;
+    right: 14.5%;
+    background-image: url(image5.jpg);
+}
+#frame2 {
+    top: 4%;
+    left: 40.4%;
+    background-image: url(image4.jpg);
+}
+#frame4 {
+    left: 5.56%;
+    top: 39%;
+    background-image: url(image2.jpg);
+}
+#frame5 {
+    right : 4%;
+    top: 39%;
+    background-image: url(image6.jpg);
+}
+#frame6 {
+    top :63%;
+    left: 16.36%;
+    background-image: url(image.jpg);
+}
+#frame7 {
+    right: 15%;
+    top: 63%;
+    background-image: url(image7.jpg);
+}
+
+#footer-box {
+    height: 13%;
+    width: 90%;
+    position: absolute;
+    border-style: dotted;
+    border-color: white;
+    border-width: 0.25vh;
+    animation: square 3s infinite ease-in-out alternate-reverse;
+    left : 4.5%;
+    top: 84.5%;
+    background-color: antiquewhite;
+
+}
+@keyframes square {
+    0% {border-color :purple;}
+    20% {border-color: orange;}
+    40% {border-color: red;}
+    60% {border-color: blue;}
+    80% {border-color: green;}
+    100% {border-color: white;}
+}
+@keyframes cirlce {
+    0% {
+        transform: rotate(360deg);
+    }
+    20% {
+        border-color: orange;
+    }
+    40% {
+        border-color: red;
+    }
+    60% {
+        border-color: blue;
+    }
+    80% {
+        border-color: green;
+    }
+    100% {
+        border-color: white;
+    }
+}
+
+#main-img {
+    z-index: 1;
+    position: absolute;
+    height: 40%;
+    width: auto;
+    left: 36.2%;
+    top: 40%;
+}
+
+#bg-img {
+    position: absolute;
+    top: 0%;
+    left: 0.01%;
+    margin: auto;
+    width: 30%;
+    height: auto;
+}
+
+#bg-img1 {
+    position: absolute;
+    top: 0%;
+    right: 0.01%;
+    width: 30%;
+    height: auto;
+}
+#main-title {
+    text-align: center;
+    font-family: this-font;
+
+}
